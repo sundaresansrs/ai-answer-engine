@@ -1,0 +1,11 @@
+Gradient Descent is an optimization algorithm used to minimize a function
+by iteratively moving in the direction of the steepest descent as defined
+by the negative of the gradient.
+
+It is widely used in machine learning and deep learning for training models
+by minimizing loss functions.
+
+Common variants include:
+1. Batch Gradient Descent
+2. Stochastic Gradient Descent
+3. Mini-batch Gradient Descent
