@@ -1,11 +1,29 @@
-Gradient Descent is an optimization algorithm used to minimize a function
-by iteratively moving in the direction of the steepest descent as defined
-by the negative of the gradient.
+Machine Learning (ML) is a subset of artificial intelligence that enables systems to learn patterns from data and improve performance on a task without being explicitly programmed for every scenario.
 
-It is widely used in machine learning and deep learning for training models
-by minimizing loss functions.
+In an organizational context, machine learning is primarily used to build predictive, classification, and recommendation systems that automate decision-making and enhance user experience.
 
-Common variants include:
-1. Batch Gradient Descent
-2. Stochastic Gradient Descent
-3. Mini-batch Gradient Descent
+Machine learning models are trained by defining a loss function that quantifies the difference between predicted outputs and actual outcomes. Training involves minimizing this loss over a dataset.
+
+Gradient Descent is the core optimization algorithm used during training of most machine learning and deep learning models. It iteratively adjusts model parameters to reduce the loss function.
+
+The Gradient Descent update rule modifies parameters in the direction opposite to the gradient of the loss function, as this direction corresponds to the steepest decrease in loss. The magnitude of each update is controlled by a hyperparameter known as the learning rate.
+
+There are three commonly used variants of Gradient Descent within machine learning systems:
+
+Batch Gradient Descent computes gradients using the entire dataset for every update. While this provides stable and accurate gradient estimates, it is computationally expensive and unsuitable for large-scale datasets.
+
+Stochastic Gradient Descent (SGD) computes gradients using a single data point at each iteration. This significantly reduces computation per step and allows faster updates, but introduces noise into the optimization process.
+
+Mini-batch Gradient Descent is the industry-standard approach. It computes gradients using small batches of data, balancing computational efficiency and convergence stability. Most modern deep learning frameworks use mini-batch Gradient Descent.
+
+The learning rate plays a critical role in training stability. A very small learning rate leads to slow convergence, while a large learning rate can cause divergence or unstable training. Learning rate scheduling and adaptive optimization methods are commonly used to address this.
+
+In practical machine learning systems, basic Gradient Descent is often extended using optimization techniques such as Momentum, RMSProp, and Adam. These methods improve convergence speed and robustness, especially for deep neural networks.
+
+Gradient Descent-based optimization does not guarantee convergence to a global minimum for non-convex loss functions, which are common in deep learning. However, empirical evidence shows that local minima often yield sufficiently good performance.
+
+Common challenges observed during training include vanishing gradients, exploding gradients, sensitivity to parameter initialization, and poor conditioning of the optimization landscape. These issues are mitigated through normalization techniques, careful initialization, and optimizer selection.
+
+Within production machine learning pipelines, Gradient Descent is tightly integrated with data preprocessing, model evaluation, and monitoring workflows to ensure reliable and repeatable training outcomes.
+
+Overall, Gradient Descent forms the foundational mechanism behind model training in modern machine learning systems and is a critical concept for understanding how learning algorithms improve performance over time.

@@ -34,3 +34,26 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+---
+
+## Day 6 – Reasoning & Quality Improvements
+
+### Objective
+Improve answer quality, reasoning depth, and transparency of the AI Answer Engine.
+
+### Key Enhancements
+- Question decomposition into sub-questions
+- Hybrid RAG (Local documents + Live web search)
+- Logical combination of multiple sources
+- Clear separation of facts and assumptions
+- Reasoning summary included with every answer
+- Answer formatting based on question type
+- Noise filtering for web results
+- Hallucination avoidance when data is insufficient
+
+### Deliverables
+- Updated backend reasoning and retrieval logic
+- Hybrid RAG implementation
+- Reasoning trace exposed in responses
+
